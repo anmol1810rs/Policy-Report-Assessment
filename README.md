@@ -19,3 +19,4 @@ Each assignment is placed in a separate folder:
 1. Navigate to the assignment folder:
    ```sh
    cd A1
+   python main.py
