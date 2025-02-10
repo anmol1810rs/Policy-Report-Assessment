@@ -1,4 +1,4 @@
-# Binary Classification Model & Finite State Machine Assignments
+# Binary Classification Model & Finite State Machine Assessments
 Name: Anmol Malhotra
 
 This repository contains two assignments:
