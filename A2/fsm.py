@@ -8,10 +8,20 @@ The FSM Class has the following functionality:
 class FSM:
 
     def __init__(self, initial_state: str, transitions: dict[tuple[str, str], str]):
+
+
+        if not isinstance(initial_state, str):
+            raise TypeError("Initial state must be a string.")
+        if not isinstance(transitions, dict):
+            raise TypeError("Transitions must be a dictionary.")
+    
         self.current_state = initial_state
         self.transitions = transitions
 
     def find_transition(self, input_digit):
+
+        if input_digit not in (0, 1):
+            raise ValueError(f"Invalid input: {input_digit}. Only binary digits (0 and 1) are allowed.")
 
         current_key = (self.current_state, input_digit)
         if current_key in self.transitions:
@@ -22,7 +32,11 @@ class FSM:
 
     def process_number(self, binary_input):
 
-        for character in binary_input:
-            digit = int(character)
-            self.find_transition(digit)
+        try:
+            for character in binary_input:
+                digit = int(character)
+                self.find_transition(digit)
+        except:
+            raise RuntimeError(f"Error while procieesing Binary Input: {binary_input}")
+        
         return self.current_state

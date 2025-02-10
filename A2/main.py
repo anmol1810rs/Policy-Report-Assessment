@@ -4,9 +4,19 @@ import states
 def main():
 
     """The main class takes the Binary String and the modulus number as input."""
-    binary_number = str(input("Enter the unsigned binary number: "))
+    binary_number = str(input("Enter the unsigned binary number: ")).strip()
     number = int(input("Enter the number to divide the binary integer: "))
 
+    if not binary_number:
+        raise ValueError("Empty Binary String not acceptable. Please provide correct binary input")
+    
+    for c in binary_number:
+        if c not in {'0', '1'}:
+            raise ValueError(f"Invalid Binary String {binary_number}. The input is not a Binary String. A binary string only comprises of 0s ans 1s")
+        
+    if not isinstance(number, int) or number <= 0:
+        raise ValueError("Modulus number must be a positive integer.")
+    
     x=0
     decimal_number = 0
     """ The following loop calculate the decimal value for the number, just for ease of understnading"""
@@ -20,4 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
