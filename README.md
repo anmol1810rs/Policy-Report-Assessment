@@ -28,6 +28,7 @@ Each assignment is placed in a separate folder:
    cd A2
    python main.py
 
+```bash
 Assessment Structure
  ┣ 📂 A1
  ┃ ┣ main.py               # Entry point for Assignment 1
