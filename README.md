@@ -12,7 +12,7 @@ This repository contains two assignments:
 
 Each assignment is placed in a separate folder:  
 - `A1/` → Assignment 1 (Threshold Selection for Classification)  
-- `A2/` → Assignment 2 (Finite State Machine for Mod-3 Calculation)
+- `A2/` → Assignment 2 (Finite State Machine for Mod-n Calculation)
 
 ### Running the Assignments
 
@@ -22,8 +22,20 @@ Each assignment is placed in a separate folder:
    cd A1
    python main.py
 
-#### **Assignment 1 - Threshold Selection**
+#### **Assignment 2 - Fine State Machine for Mod-n Calculation**
 2. Navigate to the assignment folder:
    ```sh
    cd A2
    python main.py
+
+Assessment Structure
+ ┣ 📂 A1
+ ┃ ┣ main.py               # Entry point for Assignment 1
+ ┃ ┣ best_threshold.py     # Computes the best threshold
+ ┃ ┣ tests.py              # Unit tests for threshold selection
+ ┃ 
+ ┣ 📂 A2
+ ┃ ┣ main.py               # Entry point for Assignment 2
+ ┃ ┣ fsm.py                # Finite State Machine implementation
+ ┃ ┣ states.py             # State transitions logic
+ ┗ README.md            # Generic Readme Information
