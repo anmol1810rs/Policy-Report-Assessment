@@ -39,4 +39,4 @@ Assessment Structure
  ┃ ┣ main.py               # Entry point for Assignment 2
  ┃ ┣ fsm.py                # Finite State Machine implementation
  ┃ ┣ states.py             # State transitions logic
- ┗ README.md            # Generic Readme Information
+ ┗ README.md               # Generic Readme Information
