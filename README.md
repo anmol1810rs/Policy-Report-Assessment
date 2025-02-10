@@ -1,4 +1,5 @@
 # Binary Classification Model & Finite State Machine Assignments
+Name: Anmol Malhotra
 
 This repository contains two assignments:
 
@@ -19,4 +20,10 @@ Each assignment is placed in a separate folder:
 1. Navigate to the assignment folder:
    ```sh
    cd A1
+   python main.py
+
+#### **Assignment 1 - Threshold Selection**
+2. Navigate to the assignment folder:
+   ```sh
+   cd A2
    python main.py
